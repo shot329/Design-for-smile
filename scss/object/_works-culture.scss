@@ -1,0 +1,22 @@
+.works-culture {
+  padding: 10rem 0 6rem 0;
+  background-color: cl(gray);
+  .wc-contents {
+    @include overTab {
+      display: flex;
+      justify-content: space-between;
+    }
+    .works,
+    .culture {
+      width: auto;
+      padding: 2rem 0;
+      @include overTab {
+        width: calc(50% - 6rem/2);
+      }
+    }
+    .works-image,
+    .culture-image {
+      margin-bottom: 2rem;
+    }
+  }
+}

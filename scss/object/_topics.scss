@@ -1,0 +1,35 @@
+.topics {
+  padding: 6rem 0;
+  .topics-contents {
+    .topics-list {
+      @include overTab {
+        width: 63%;
+        margin-left: auto;
+      }
+      .topics-item {
+        &:nth-child(n+2) {
+          margin-top: 3rem;
+        }
+        .date {
+          font-size: 0.6rem;
+          color: cl(gray3);
+        }
+        .title {
+          font-size: 1.3rem;
+          font-weight: 700;
+          padding-bottom: 1rem;
+          border-bottom: 1px solid cl(gray3);
+          @include overTab {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+    .contact-btn {
+      width: 17rem;
+      @include overTab {
+        margin-left: auto;
+      }
+    }
+  }
+}

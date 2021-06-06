@@ -1,0 +1,22 @@
+.contact {
+  background-color: cl(gray);
+  padding: 6rem 0 10rem 0;
+  .contact-contents {
+    @include overTab {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+    }
+    .contact-texts {
+      margin-top: 5rem;
+      @include overTab {
+        width: 43%;
+      }
+    }
+    .contact-image {
+      @include overTab {
+        width: 50%;
+      }
+    }
+  }
+}

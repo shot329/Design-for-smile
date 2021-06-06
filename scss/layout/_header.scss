@@ -1,0 +1,50 @@
+.header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 8rem;
+  line-height: 8rem;
+  @include overTab {
+    height: 12rem;
+    line-height: 12rem;
+  }
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    .site-logo {
+      width: 19rem;
+      @include overTab {
+        width: 25rem;
+      }
+    }
+    .burger-btn {
+      display: flex;
+      position: absolute;
+      top: 2.6rem;
+      right: 3rem;
+      @include overTab {
+        top: 3.6rem;
+        right: 6rem;
+      }
+      .bar {
+        display: block;
+        background-color: cl(white);
+        height: 0.2rem;
+        width: 2.2rem;
+      }
+      .menu {
+        color: cl(white);
+        font-size: 1rem;
+        font-weight: 700;
+        margin-left: .5rem;
+      }
+      .bar-top,
+      .bar-mid {
+        margin-bottom: 0.4rem;
+        transition: .3s;
+      }
+    }
+  }
+}

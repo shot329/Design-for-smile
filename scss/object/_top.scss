@@ -1,0 +1,92 @@
+// .fv {
+//   position: relative;
+//   height: 100vh;
+//   .kv {
+//     position: absolute;
+//     width: 76%;
+//     z-index: 5;
+//     img {
+//       width: 100%;
+//       height: 80%;
+//     }
+//   }
+//   .fv-right {
+//     position: absolute;
+//     right: 0;
+//     background-color: cl(black);
+//     width: 55%;
+//     height: 100vh;
+//     .copy-wrapper {
+//       position: absolute;
+//       top: 23vh;
+//       left: 22vw;
+//       z-index: 8;
+//       color: cl(white);
+//       .copy-company {
+//         font-size: 2rem;
+//       }
+//       .main-copy {
+//         font-size: 6rem;
+//       }
+//     }
+//   }
+// }
+
+.fv {
+  height: 100vh;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: cl(black);
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+  }
+  .kv-wrapper {
+    background-image: url('../../img/kv-img.png');
+    background-size: cover;
+    background-position: center 0;
+    width: 76.4%;
+    height: 86.5%;
+    position: relative;
+    .copy-wrapper {
+      position: absolute;
+      top: 50%;
+      // right: 0;
+      right: -15%;
+      transform: translate(0,-50%);
+      color: cl(white);
+      // x軸方向に50%分移動、y軸方向に-50%分移動。//
+      @include overTab {
+        right: 0;
+        transform: translate(50%, -50%);
+      }
+      .copy-jp {
+        font-size: 1.6rem;
+        margin-bottom: 4px;
+        @include overTab {
+          font-size: 2rem;
+        }
+      }
+      .copy-company {
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+        font-weight: bold;
+        @include overTab {
+          font-size: 2rem;
+        }
+      }
+      .main-copy {
+        font-size: 5rem;
+        line-height: 1.2;
+        font-weight: bold;
+        text-transform: uppercase;// ?? //
+        @include overTab {
+          font-size: 7.2rem;
+        }
+      }
+    }
+  }
+}
