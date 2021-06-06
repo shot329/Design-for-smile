@@ -2,7 +2,7 @@
   padding-top: 10rem;
   background: linear-gradient(cl(white) 90%, cl(gray) 10%);
   .about-contents {
-    background-image: url('../../img/about-img.png'); // ★ //
+    background-image: url('../img/about-img.png'); // ★ //
     background-size: cover;
     padding: 6rem 4vw;
     @include overTab {
