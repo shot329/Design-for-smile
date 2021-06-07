@@ -19,6 +19,30 @@
         width: 25rem;
       }
     }
+    .header-nav {
+      display: none;
+      background-color: cl(black);
+      opacity: 0.9;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 68%;
+      height: 100vh;
+      text-align: center;
+      vertical-align: center;
+      @include overTab {
+        width: 36%;
+      }
+      .header-item {
+        a {
+          color: cl(white);
+          font-size: 1.8rem;
+        }
+        &:first-child {
+          margin-top: 8rem;
+        }
+      }
+    }
     .burger-btn {
       display: flex;
       position: absolute;
@@ -43,6 +67,20 @@
       .bar-top,
       .bar-mid {
         margin-bottom: 0.4rem;
+        transition: .3s;
+      }
+    }
+    .burger-btn.cross {
+      .bar-top {
+        transform: rotate(45deg) translate(4.5px, 4.5px);
+        transition: .3s;
+      }
+      .bar-mid {
+        opacity: 0;
+        transition: .3s;
+      }
+      .bar-bottom {
+        transform: rotate(-45deg) translate(4px, -4px);
         transition: .3s;
       }
     }

@@ -27,5 +27,9 @@
   font-size: 1.6rem;
   color: cl(white);
   margin-top: 3rem;
+  &:hover {
+    opacity: 0.8;
+    transition: .3s;
+  }
 }
 
