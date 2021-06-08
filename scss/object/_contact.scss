@@ -20,3 +20,94 @@
     }
   }
 }
+
+// form 
+.contact-form {
+  max-width: 76rem;
+  margin: 0 auto 10rem;
+  padding: 0 1.5rem;
+  .contact-texts {
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+  }
+  .form-wrapper {
+    .form-item {
+      .form-label {
+        margin-bottom: 1rem;
+        label {
+          font-size: 1.8rem;
+          font-weight: bold;
+        }
+        span {
+          display: inline-block;
+          background-color: cl(black);
+          color: cl(white);
+          font-size: 1.3rem;
+          font-weight: bold;
+          padding: 0 0.3rem;
+          margin-left: 1rem;
+        }
+      }
+      dd {
+        margin-bottom: 3.5rem;
+      }
+      .radio {
+        display: inline-block;
+        margin-right: 1rem;
+        @include overTab {
+          margin-right: 3rem;
+        }
+        span {
+          display: inline-block;
+          font-size: 1.7rem;
+          margin-left: .4rem;
+        }
+      }
+      .text {
+        input,textarea {
+          padding: 1rem 0 1rem 0.5rem;
+          display: block;
+          width: 100%;
+          font-size: 1.7rem;
+          box-sizing: border-box;
+        }
+      }
+    }
+    .privacy {
+      .policy {
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+      .policy-texts {
+        font-size: 1.6rem;
+        border: 1px solid cl(black);
+        padding: 1.5rem;
+        height: 24rem;
+        overflow: scroll;
+        margin: 1rem 0 4rem;
+        width: 100%;
+        box-sizing: border-box;
+        .margin-bottom {
+          margin-bottom: 1.5rem;
+        }
+      }
+      .agree-check {
+        max-width: 44rem;
+        margin: 0 auto 3rem;
+        label {
+          font-size: 1.7rem;
+          margin-left: 0.4rem;
+        }
+      }
+    }
+    .submit-btn {
+      display: block;
+      background-color: cl(black);
+      color: cl(white);
+      padding: 1rem 5.5rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin: 0 auto;
+    }
+  }
+}

@@ -33,3 +33,25 @@
   }
 }
 
+// about,contactページのテキスト
+.cmn-copy-wrapper {
+  font-weight: bold;
+  .copy-title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  .copy-jp {
+    font-size: 2.8rem;
+    margin-bottom: 2.5rem;
+  }
+  .copy-container {
+    .copy-text {
+      line-height: 3.2rem;
+      font-size: 1.5rem;
+      margin-bottom: 3.3rem;
+      @include overTab {
+        font-size: 1.7rem;
+      }
+    }
+  }
+}

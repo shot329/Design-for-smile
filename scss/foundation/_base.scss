@@ -9,6 +9,7 @@ $colors: (
 	gray2: #525252,
 	gray3: #CECECE,
 	gray4: #707070,
+	yellow: yellow,
 );
 
 @function cl($key) {
@@ -20,3 +21,11 @@ $colors: (
 		@content;
 	}
 }
+
+@mixin minTab {
+	@media print,screen and (max-width: 450px) {
+		@content;
+	}
+}
+
+
