@@ -10,10 +10,97 @@
     }
     .about-texts {
       padding: 5rem 2rem 4rem 3rem;
-      // width: 50%;
       max-width: 59rem;
       background-color: cl(white);
       opacity: 0.9;
+    }
+  }
+}
+
+// vision
+.vision {
+  padding-bottom: 10rem;
+  .vision-wrapper {
+    max-width: 68rem;
+    margin: 0 auto;
+  }
+}
+
+// message
+.message {
+  height: 120rem;
+  .message-wrapper {
+    position: relative;
+    .message-image {
+      position: absolute;
+      left: 0;
+      width: 40rem;
+      @include minTab {
+        width: 90%;
+      }
+      @include overTab {
+        width: 37%;
+      }
+    }
+    .bg-gray {
+      background-color: cl(gray);
+      position: absolute;
+      top: 18rem;
+      z-index: -1;
+      right: 2rem;
+      width: calc(100% - 4rem);
+      margin: 0 auto;
+      @include overTab {
+        max-width: 70%;
+        top: 15rem;
+        right: 3rem;
+      }
+      .copy-container {
+        padding: 18vh 6vw 6vh 6vw;
+        @include overTab {
+          padding: 18vh 13vw;
+        }
+      }
+    }
+  }
+}
+
+// company
+.company {
+  .company-wrapper {
+    .section-title {
+      font-size: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid cl(gray3);
+    }
+    .company-table {
+      margin-bottom: 5rem;
+      border-spacing: 0;
+      width: 100%;
+      @include overTab {
+        width: 73%;
+        margin-left: auto;
+
+      }
+      tr {
+        height: 6rem;
+        line-height: 6rem;
+        td {
+          font-size: 1.5rem;
+          border-bottom: 1px solid cl(gray3);
+          @include overTab {
+            font-size: 1.7rem;
+          }
+          &:first-child {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    iframe {
+      width: 100%;
+      height: 40rem;
+      margin-bottom: 10rem;
     }
   }
 }

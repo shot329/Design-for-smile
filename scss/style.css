@@ -53,6 +53,32 @@ img {
   transition: .3s;
 }
 
+.cmn-copy-wrapper {
+  font-weight: bold;
+}
+
+.cmn-copy-wrapper .copy-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.cmn-copy-wrapper .copy-jp {
+  font-size: 2.8rem;
+  margin-bottom: 2.5rem;
+}
+
+.cmn-copy-wrapper .copy-container .copy-text {
+  line-height: 3.2rem;
+  font-size: 1.5rem;
+  margin-bottom: 3.3rem;
+}
+
+@media print, screen and (min-width: 768px) {
+  .cmn-copy-wrapper .copy-container .copy-text {
+    font-size: 1.7rem;
+  }
+}
+
 .footer {
   background-color: #525252;
   height: 5rem;
@@ -287,6 +313,114 @@ img {
   opacity: 0.9;
 }
 
+.vision {
+  padding-bottom: 10rem;
+}
+
+.vision .vision-wrapper {
+  max-width: 68rem;
+  margin: 0 auto;
+}
+
+.message {
+  height: 120rem;
+}
+
+.message .message-wrapper {
+  position: relative;
+}
+
+.message .message-wrapper .message-image {
+  position: absolute;
+  left: 0;
+  width: 40rem;
+}
+
+@media print, screen and (max-width: 450px) {
+  .message .message-wrapper .message-image {
+    width: 90%;
+  }
+}
+
+@media print, screen and (min-width: 768px) {
+  .message .message-wrapper .message-image {
+    width: 37%;
+  }
+}
+
+.message .message-wrapper .bg-gray {
+  background-color: #F0F0F0;
+  position: absolute;
+  top: 18rem;
+  z-index: -1;
+  right: 2rem;
+  width: calc(100% - 4rem);
+  margin: 0 auto;
+}
+
+@media print, screen and (min-width: 768px) {
+  .message .message-wrapper .bg-gray {
+    max-width: 70%;
+    top: 15rem;
+    right: 3rem;
+  }
+}
+
+.message .message-wrapper .bg-gray .copy-container {
+  padding: 18vh 6vw 6vh 6vw;
+}
+
+@media print, screen and (min-width: 768px) {
+  .message .message-wrapper .bg-gray .copy-container {
+    padding: 18vh 13vw;
+  }
+}
+
+.company .company-wrapper .section-title {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #CECECE;
+}
+
+.company .company-wrapper .company-table {
+  margin-bottom: 5rem;
+  border-spacing: 0;
+  width: 100%;
+}
+
+@media print, screen and (min-width: 768px) {
+  .company .company-wrapper .company-table {
+    width: 73%;
+    margin-left: auto;
+  }
+}
+
+.company .company-wrapper .company-table tr {
+  height: 6rem;
+  line-height: 6rem;
+}
+
+.company .company-wrapper .company-table tr td {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #CECECE;
+}
+
+@media print, screen and (min-width: 768px) {
+  .company .company-wrapper .company-table tr td {
+    font-size: 1.7rem;
+  }
+}
+
+.company .company-wrapper .company-table tr td:first-child {
+  font-weight: bold;
+}
+
+.company .company-wrapper iframe {
+  width: 100%;
+  height: 40rem;
+  margin-bottom: 10rem;
+}
+
 .works-culture {
   padding: 10rem 0 6rem 0;
   background-color: #F0F0F0;
@@ -397,6 +531,247 @@ img {
 @media print, screen and (min-width: 768px) {
   .contact .contact-contents .contact-image {
     width: 50%;
+  }
+}
+
+.contact-form {
+  max-width: 76rem;
+  margin: 0 auto 10rem;
+  padding: 0 1.5rem;
+}
+
+.contact-form .contact-texts {
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+}
+
+.contact-form .form-wrapper .form-item .form-label {
+  margin-bottom: 1rem;
+}
+
+.contact-form .form-wrapper .form-item .form-label label {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.contact-form .form-wrapper .form-item .form-label span {
+  display: inline-block;
+  background-color: #222;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 0 0.3rem;
+  margin-left: 1rem;
+}
+
+.contact-form .form-wrapper .form-item dd {
+  margin-bottom: 3.5rem;
+}
+
+.contact-form .form-wrapper .form-item .radio {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+@media print, screen and (min-width: 768px) {
+  .contact-form .form-wrapper .form-item .radio {
+    margin-right: 3rem;
+  }
+}
+
+.contact-form .form-wrapper .form-item .radio span {
+  display: inline-block;
+  font-size: 1.7rem;
+  margin-left: .4rem;
+}
+
+.contact-form .form-wrapper .form-item .text input, .contact-form .form-wrapper .form-item .text textarea {
+  padding: 1rem 0 1rem 0.5rem;
+  display: block;
+  width: 100%;
+  font-size: 1.7rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact-form .form-wrapper .privacy .policy {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.contact-form .form-wrapper .privacy .policy-texts {
+  font-size: 1.6rem;
+  border: 1px solid #222;
+  padding: 1.5rem;
+  height: 24rem;
+  overflow: scroll;
+  margin: 1rem 0 4rem;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact-form .form-wrapper .privacy .policy-texts .margin-bottom {
+  margin-bottom: 1.5rem;
+}
+
+.contact-form .form-wrapper .privacy .agree-check {
+  max-width: 44rem;
+  margin: 0 auto 3rem;
+}
+
+.contact-form .form-wrapper .privacy .agree-check label {
+  font-size: 1.7rem;
+  margin-left: 0.4rem;
+}
+
+.contact-form .form-wrapper .submit-btn {
+  display: block;
+  background-color: #222;
+  color: #fff;
+  padding: 1rem 5.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.about-fv {
+  height: 100vh;
+}
+
+.about-fv::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #222;
+  width: 50%;
+  height: 78%;
+  z-index: -1;
+}
+
+.about-fv .about-kv-wrapper {
+  background-image: url("../img/about-img.png");
+  background-size: cover;
+  background-position: center 0;
+  width: 76.4%;
+  height: 67%;
+  position: relative;
+}
+
+.about-fv .about-kv-wrapper .cmn-copy-wrapper {
+  position: absolute;
+  top: 50%;
+  right: -15%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  color: #fff;
+}
+
+@media print, screen and (min-width: 768px) {
+  .about-fv .about-kv-wrapper .cmn-copy-wrapper {
+    right: 0;
+    -webkit-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+  }
+}
+
+.about-fv .about-kv-wrapper .cmn-copy-wrapper .copy-jp {
+  font-size: 1.6rem;
+  margin-bottom: 4px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .about-fv .about-kv-wrapper .cmn-copy-wrapper .copy-jp {
+    font-size: 2rem;
+  }
+}
+
+.about-fv .about-kv-wrapper .cmn-copy-wrapper .main-copy {
+  font-size: 5rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+@media print, screen and (min-width: 768px) {
+  .about-fv .about-kv-wrapper .cmn-copy-wrapper .main-copy {
+    font-size: 7.2rem;
+  }
+}
+
+.contact-fv {
+  height: 100vh;
+}
+
+.contact-fv::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #222;
+  width: 50%;
+  height: 78%;
+  z-index: -1;
+}
+
+.contact-fv .contact-kv-wrapper {
+  background-image: url("../img/recruit-img.png");
+  background-size: cover;
+  background-position: center 0;
+  width: 76.4%;
+  height: 67%;
+  position: relative;
+}
+
+.contact-fv .contact-kv-wrapper .copy-wrapper {
+  position: absolute;
+  top: 50%;
+  right: -15%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  color: #fff;
+}
+
+@media print, screen and (min-width: 768px) {
+  .contact-fv .contact-kv-wrapper .copy-wrapper {
+    right: 0;
+    -webkit-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+  }
+}
+
+.contact-fv .contact-kv-wrapper .copy-wrapper .copy-jp {
+  font-size: 1.6rem;
+  margin-bottom: 4px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .contact-fv .contact-kv-wrapper .copy-wrapper .copy-jp {
+    font-size: 2rem;
+  }
+}
+
+.contact-fv .contact-kv-wrapper .copy-wrapper .copy-company {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+@media print, screen and (min-width: 768px) {
+  .contact-fv .contact-kv-wrapper .copy-wrapper .copy-company {
+    font-size: 2rem;
+  }
+}
+
+.contact-fv .contact-kv-wrapper .copy-wrapper .main-copy {
+  font-size: 5rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+@media print, screen and (min-width: 768px) {
+  .contact-fv .contact-kv-wrapper .copy-wrapper .main-copy {
+    font-size: 7.2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
