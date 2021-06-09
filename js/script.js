@@ -6,7 +6,7 @@ $(function() {
     $(this).toggleClass('cross');
   });
 
-  $('.header-item').on('click', function() {
+  $('.nav-item').on('click', function() {
     $('.header-nav').fadeOut(300);
     $('.burger-btn').removeClass('cross');
   });

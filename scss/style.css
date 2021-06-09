@@ -23,22 +23,22 @@ img {
   margin: 0 auto;
 }
 
-.cmn-title {
+.cmn-section-title {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 3rem;
 }
 
-.cmn-texts {
+.cmn-section-texts {
   font-size: 1.8rem;
   line-height: 3rem;
 }
 
-.cmn-texts span {
+.cmn-section-texts span {
   display: inline-block;
 }
 
-.cmn-btn {
+.cmn-link-btn {
   display: inline-block;
   background-color: #222;
   padding: 0.6rem 4.5rem;
@@ -47,7 +47,7 @@ img {
   margin-top: 3rem;
 }
 
-.cmn-btn:hover {
+.cmn-link-btn:hover {
   opacity: 0.8;
   -webkit-transition: .3s;
   transition: .3s;
@@ -57,7 +57,7 @@ img {
   font-weight: bold;
 }
 
-.cmn-copy-wrapper .copy-title {
+.cmn-copy-wrapper h2.section-title {
   font-size: 3rem;
   margin-bottom: 2rem;
 }
@@ -145,12 +145,12 @@ img {
   }
 }
 
-.header .header-wrapper .header-nav .header-item a {
+.header .header-wrapper .header-nav .nav-item a {
   color: #fff;
   font-size: 1.8rem;
 }
 
-.header .header-wrapper .header-nav .header-item:first-child {
+.header .header-wrapper .header-nav .nav-item:first-child {
   margin-top: 8rem;
 }
 
@@ -382,36 +382,36 @@ img {
   border-bottom: 1px solid #CECECE;
 }
 
-.company .company-wrapper .company-table {
+.company .company-wrapper .company-info-table {
   margin-bottom: 5rem;
   border-spacing: 0;
   width: 100%;
 }
 
 @media print, screen and (min-width: 768px) {
-  .company .company-wrapper .company-table {
+  .company .company-wrapper .company-info-table {
     width: 73%;
     margin-left: auto;
   }
 }
 
-.company .company-wrapper .company-table tr {
+.company .company-wrapper .company-info-table .company-info-record {
   height: 6rem;
   line-height: 6rem;
 }
 
-.company .company-wrapper .company-table tr td {
+.company .company-wrapper .company-info-table .company-info-record td {
   font-size: 1.5rem;
   border-bottom: 1px solid #CECECE;
 }
 
 @media print, screen and (min-width: 768px) {
-  .company .company-wrapper .company-table tr td {
+  .company .company-wrapper .company-info-table .company-info-record td {
     font-size: 1.7rem;
   }
 }
 
-.company .company-wrapper .company-table tr td:first-child {
+.company .company-wrapper .company-info-table .company-info-record .company-info-title {
   font-weight: bold;
 }
 
@@ -470,12 +470,12 @@ img {
   margin-top: 3rem;
 }
 
-.topics .topics-contents .topics-list .topics-item .date {
+.topics .topics-contents .topics-list .topics-item .topics-date {
   font-size: 0.6rem;
   color: #CECECE;
 }
 
-.topics .topics-contents .topics-list .topics-item .title {
+.topics .topics-contents .topics-list .topics-item .topics-title {
   font-size: 1.3rem;
   font-weight: 700;
   padding-bottom: 1rem;
@@ -483,7 +483,7 @@ img {
 }
 
 @media print, screen and (min-width: 768px) {
-  .topics .topics-contents .topics-list .topics-item .title {
+  .topics .topics-contents .topics-list .topics-item .topics-title {
     font-size: 1.6rem;
   }
 }
@@ -529,7 +529,7 @@ img {
 }
 
 @media print, screen and (min-width: 768px) {
-  .contact .contact-contents .contact-image {
+  .contact .contact-contents .contact-image-wrapper {
     width: 50%;
   }
 }
@@ -540,21 +540,21 @@ img {
   padding: 0 1.5rem;
 }
 
-.contact-form .contact-texts {
+.contact-form .contact-lead {
   font-size: 1.8rem;
   margin-bottom: 4rem;
 }
 
-.contact-form .form-wrapper .form-item .form-label {
+.contact-form .form-wrapper .form-item .form-item-title {
   margin-bottom: 1rem;
 }
 
-.contact-form .form-wrapper .form-item .form-label label {
+.contact-form .form-wrapper .form-item .form-item-title label {
   font-size: 1.8rem;
   font-weight: bold;
 }
 
-.contact-form .form-wrapper .form-item .form-label span {
+.contact-form .form-wrapper .form-item .form-item-title .required {
   display: inline-block;
   background-color: #222;
   color: #fff;
@@ -594,12 +594,12 @@ img {
           box-sizing: border-box;
 }
 
-.contact-form .form-wrapper .privacy .policy {
+.contact-form .form-wrapper .privacy-policy-wrapper .privacy-policy-title {
   font-size: 1.8rem;
   font-weight: bold;
 }
 
-.contact-form .form-wrapper .privacy .policy-texts {
+.contact-form .form-wrapper .privacy-policy-wrapper .privacy-policy-detail {
   font-size: 1.6rem;
   border: 1px solid #222;
   padding: 1.5rem;
@@ -611,16 +611,12 @@ img {
           box-sizing: border-box;
 }
 
-.contact-form .form-wrapper .privacy .policy-texts .margin-bottom {
-  margin-bottom: 1.5rem;
-}
-
-.contact-form .form-wrapper .privacy .agree-check {
+.contact-form .form-wrapper .privacy-policy-wrapper .confirm {
   max-width: 44rem;
   margin: 0 auto 3rem;
 }
 
-.contact-form .form-wrapper .privacy .agree-check label {
+.contact-form .form-wrapper .privacy-policy-wrapper .confirm .confirm-text {
   font-size: 1.7rem;
   margin-left: 0.4rem;
 }
@@ -676,26 +672,27 @@ img {
   }
 }
 
-.about-fv .about-kv-wrapper .cmn-copy-wrapper .copy-jp {
-  font-size: 1.6rem;
-  margin-bottom: 4px;
-}
-
-@media print, screen and (min-width: 768px) {
-  .about-fv .about-kv-wrapper .cmn-copy-wrapper .copy-jp {
-    font-size: 2rem;
-  }
-}
-
-.about-fv .about-kv-wrapper .cmn-copy-wrapper .main-copy {
+.about-fv .about-kv-wrapper .cmn-copy-wrapper .page-title {
   font-size: 5rem;
   line-height: 1.2;
   font-weight: bold;
 }
 
 @media print, screen and (min-width: 768px) {
-  .about-fv .about-kv-wrapper .cmn-copy-wrapper .main-copy {
+  .about-fv .about-kv-wrapper .cmn-copy-wrapper .page-title {
     font-size: 7.2rem;
+  }
+}
+
+.about-fv .about-kv-wrapper .cmn-copy-wrapper .jp-page-title {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 4px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .about-fv .about-kv-wrapper .cmn-copy-wrapper .jp-page-title {
+    font-size: 2rem;
   }
 }
 
@@ -740,38 +737,27 @@ img {
   }
 }
 
-.contact-fv .contact-kv-wrapper .copy-wrapper .copy-jp {
-  font-size: 1.6rem;
-  margin-bottom: 4px;
-}
-
-@media print, screen and (min-width: 768px) {
-  .contact-fv .contact-kv-wrapper .copy-wrapper .copy-jp {
-    font-size: 2rem;
-  }
-}
-
-.contact-fv .contact-kv-wrapper .copy-wrapper .copy-company {
-  font-size: 1.6rem;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-@media print, screen and (min-width: 768px) {
-  .contact-fv .contact-kv-wrapper .copy-wrapper .copy-company {
-    font-size: 2rem;
-  }
-}
-
-.contact-fv .contact-kv-wrapper .copy-wrapper .main-copy {
+.contact-fv .contact-kv-wrapper .copy-wrapper .page-title {
   font-size: 5rem;
   line-height: 1.2;
   font-weight: bold;
 }
 
 @media print, screen and (min-width: 768px) {
-  .contact-fv .contact-kv-wrapper .copy-wrapper .main-copy {
+  .contact-fv .contact-kv-wrapper .copy-wrapper .page-title {
     font-size: 7.2rem;
+  }
+}
+
+.contact-fv .contact-kv-wrapper .copy-wrapper .jp-page-title {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 4px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .contact-fv .contact-kv-wrapper .copy-wrapper .jp-page-title {
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

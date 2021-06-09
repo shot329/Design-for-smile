@@ -73,7 +73,7 @@
       padding-bottom: 2rem;
       border-bottom: 1px solid cl(gray3);
     }
-    .company-table {
+    .company-info-table {
       margin-bottom: 5rem;
       border-spacing: 0;
       width: 100%;
@@ -82,7 +82,7 @@
         margin-left: auto;
 
       }
-      tr {
+      .company-info-record {
         height: 6rem;
         line-height: 6rem;
         td {
@@ -91,9 +91,9 @@
           @include overTab {
             font-size: 1.7rem;
           }
-          &:first-child {
-            font-weight: bold;
-          }
+        }
+        .company-info-title {
+          font-weight: bold;
         }
       }
     }
