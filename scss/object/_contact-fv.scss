@@ -28,27 +28,20 @@
         right: 0;
         transform: translate(50%, -50%);
       }
-      .copy-jp {
-        font-size: 1.6rem;
-        margin-bottom: 4px;
-        @include overTab {
-          font-size: 2rem;
-        }
-      }
-      .copy-company {
-        font-size: 1.6rem;
-        margin-bottom: 10px;
-        font-weight: bold;
-        @include overTab {
-          font-size: 2rem;
-        }
-      }
-      .main-copy {
+      .page-title {
         font-size: 5rem;
         line-height: 1.2;
         font-weight: bold;
         @include overTab {
           font-size: 7.2rem;
+        }
+      }
+      .jp-page-title {
+        display: block;
+        font-size: 1.6rem;
+        margin-bottom: 4px;
+        @include overTab {
+          font-size: 2rem;
         }
       }
     }

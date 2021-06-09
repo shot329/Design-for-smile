@@ -13,7 +13,7 @@
         width: 43%;
       }
     }
-    .contact-image {
+    .contact-image-wrapper {
       @include overTab {
         width: 50%;
       }
@@ -26,19 +26,19 @@
   max-width: 76rem;
   margin: 0 auto 10rem;
   padding: 0 1.5rem;
-  .contact-texts {
+  .contact-lead {
     font-size: 1.8rem;
     margin-bottom: 4rem;
   }
   .form-wrapper {
     .form-item {
-      .form-label {
+      .form-item-title {
         margin-bottom: 1rem;
         label {
           font-size: 1.8rem;
           font-weight: bold;
         }
-        span {
+        .required {
           display: inline-block;
           background-color: cl(black);
           color: cl(white);
@@ -73,12 +73,12 @@
         }
       }
     }
-    .privacy {
-      .policy {
+    .privacy-policy-wrapper {
+      .privacy-policy-title {
         font-size: 1.8rem;
         font-weight: bold;
       }
-      .policy-texts {
+      .privacy-policy-detail {
         font-size: 1.6rem;
         border: 1px solid cl(black);
         padding: 1.5rem;
@@ -87,14 +87,11 @@
         margin: 1rem 0 4rem;
         width: 100%;
         box-sizing: border-box;
-        .margin-bottom {
-          margin-bottom: 1.5rem;
-        }
       }
-      .agree-check {
+      .confirm {
         max-width: 44rem;
         margin: 0 auto 3rem;
-        label {
+        .confirm-text {
           font-size: 1.7rem;
           margin-left: 0.4rem;
         }
