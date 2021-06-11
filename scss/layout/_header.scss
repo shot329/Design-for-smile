@@ -3,10 +3,10 @@
   z-index: 10;
   width: 100%;
   height: 8rem;
-  line-height: 8rem;
+  // line-height: 8rem;
   @include overTab {
     height: 12rem;
-    line-height: 12rem;
+    // line-height: 12rem;
   }
   .header-wrapper {
     display: flex;
@@ -15,8 +15,10 @@
     margin: 0 auto;
     .site-logo {
       width: 19rem;
+      line-height: 8rem;
       @include overTab {
         width: 25rem;
+        line-height: 12rem;
       }
     }
     .header-nav {
@@ -28,8 +30,12 @@
       right: 0;
       width: 68%;
       height: 100vh;
+      line-height: 6rem;
       text-align: center;
       vertical-align: center;
+      transform: translateX(100%);
+      transition: transform .3s;
+      font-weight: bold;
       @include overTab {
         width: 36%;
       }
@@ -42,6 +48,10 @@
           margin-top: 8rem;
         }
       }
+    }
+    .open {
+      transform: translateX(0);
+      transition: transform .3s;
     }
     .burger-btn {
       display: flex;
@@ -70,6 +80,16 @@
         transition: .3s;
       }
     }
+    .burger-btn.black {
+      .bar {
+        background-color: cl(black);
+        transition: background-color .3s;
+      }
+      .menu {
+        color: cl(black);
+        transition: .3s;
+      }
+    }
     .burger-btn.cross {
       .bar-top {
         transform: rotate(45deg) translate(4.5px, 4.5px);
@@ -83,6 +103,16 @@
         transform: rotate(-45deg) translate(4px, -4px);
         transition: .3s;
       }
+    }
+    .burger-musk{
+      display: none;
+      height: 100vh;
+      width: 100vw;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color:rgba(0,0,0,.5);
+      z-index: -1;
     }
   }
 }
